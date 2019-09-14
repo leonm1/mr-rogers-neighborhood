@@ -1,0 +1,20 @@
+{
+  "name": "mrrogersneighborhood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fuse.js": "^3.4.5",
+    "haversine-distance": "^1.1.4",
+    "pg": "^7.12.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^12.7.5"
+  }
+}
