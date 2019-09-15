@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Gotham;
+  src: url('/gotham-medium-webfont.woff');
+}
+
+@font-face {
+  font-family: GothamBold;
+  src: url('/gotham-bold-webfont.woff');
+}
+
+:root {
+  --red-color: #d93954;
+  --dark-grey: #2e2f36;
+}
+
+.App-Main {
+  font-family: Gotham;
+  display: grid;
+  grid: 10vh calc(90vh - 25px) calc(100vh - 25px) / 1fr;
+  padding: 25px 55px;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-grey);
+}
+a.active {
+  color: var(--red-color);
+}
+
+header {
+  padding: 0 5%;
+
+  div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  div img {
+    height: 50%;
+  }
+  div nav {
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+  }
+}
+
+main {
+  h1 {
+    font-size: 50px;
+    font-family: GothamBold;
+    font-weight: bold;
+
+    // Styling for 'Perfect'
+    em {
+      color: var(--red-color);
+      font-style: normal; // Override italic from em tag
+    }
+  }
+
+  // Subheading text
+  h2 {
+    opacity: 0.5;
+    font-size: 14px;
+    font-family: Gotham;
+    color: var(--dark-grey);
+    letter-spacing: unset;
+    font-weight: lighter;
+  }
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+
+  span {
+    flex: 0 0 40%;
+    margin: 5%;
+    padding-top: 60px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  span.left {
+    flex: 1 1 50%;
+  }
+
+  button {
+    padding: 15px 30px;
+    background: var(--red-color) padding-box;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-family: Gotham;
+    margin-top: 60px;
+  }
+}
+
+#scroll-notif {
+  position: absolute;
+  top: 90vh;
+  width: calc(100% - 110px);
+  text-align: center;
+  opacity: 0.5;
+  color: var(--red-color);
+  font-size: 15px;
+}

@@ -1,0 +1,21 @@
+.option-picker {
+  display: flex;
+  flex-flow: row nowrap;
+	border: 1px solid var(--dark-grey);
+	padding: 12px;
+	display: grid;
+	grid-gap: 10px;
+	grid-auto-flow: column;
+	grid-template-columns: 12fr 8fr 8fr 3fr 3fr;
+	width: 65vw;
+	margin-top: 60px;
+}
+
+// Native style of react-dropdown
+.Dropdown-control {
+  border: none;
+}
+
+input[type='text'] {
+  border: none;
+}
